@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tZFKFx/POdL4riEyiclDCzJxS5yl0MNqh1TMdcATNxrp+GS7Dj1z6PguHuh/nvP0crAs2QkIINyI6Pjt+QdMAw==",
+  "dgSpecHash": "sajq+fkREmGxgSVXEm82OCAhHLkW4XADq2Yk7CSsPxX/TC0TS1rOgudAd4OX12qFsWWN0II95GQEdUSG6HMF5g==",
   "success": true,
   "projectFilePath": "D:\\Project\\MultilingualApp\\MultilingualApp.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,8 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0-rc.2.21480.5\\microsoft.extensions.fileproviders.abstractions.6.0.0-rc.2.21480.5.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0-rc.2.21480.5\\microsoft.extensions.fileproviders.physical.6.0.0-rc.2.21480.5.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0-rc.2.21480.5\\microsoft.extensions.filesystemglobbing.6.0.0-rc.2.21480.5.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.localization\\5.0.11\\microsoft.extensions.localization.5.0.11.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\5.0.11\\microsoft.extensions.localization.abstractions.5.0.11.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0-rc.2.21480.5\\microsoft.extensions.logging.6.0.0-rc.2.21480.5.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0-rc.2.21480.5\\microsoft.extensions.logging.abstractions.6.0.0-rc.2.21480.5.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.options\\6.0.0-rc.2.21480.5\\microsoft.extensions.options.6.0.0-rc.2.21480.5.nupkg.sha512",

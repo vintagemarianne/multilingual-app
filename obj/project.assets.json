@@ -238,6 +238,30 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "Microsoft.Extensions.Localization/5.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "5.0.11",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Options": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Localization.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/5.0.11": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Localization.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Localization.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Extensions.Logging/6.0.0-rc.2.21480.5": {
         "type": "package",
         "dependencies": {
@@ -627,6 +651,30 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Localization/5.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "5.0.11",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Options": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Localization.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/5.0.11": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Localization.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Localization.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Logging/6.0.0-rc.2.21480.5": {
@@ -1233,6 +1281,44 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.Localization/5.0.11": {
+      "sha512": "tsdk+zUNLHrDD5PArLroukXJsRCsyX01EyxAisVf+S3OmeifQuZsWkoXDd/N117r94T1TXcBy9aYAEv0OzA2dg==",
+      "type": "package",
+      "path": "microsoft.extensions.localization/5.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Localization.dll",
+        "lib/net461/Microsoft.Extensions.Localization.xml",
+        "lib/net5.0/Microsoft.Extensions.Localization.dll",
+        "lib/net5.0/Microsoft.Extensions.Localization.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.xml",
+        "microsoft.extensions.localization.5.0.11.nupkg.sha512",
+        "microsoft.extensions.localization.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Localization.Abstractions/5.0.11": {
+      "sha512": "mnsPIwru48tiQ7l91s5e+1+Mcia/Gr2AvBOBm6rgNDvQ3tnxv2M85jUcLYpbcwpDLB1f+QjF92XeA/LlRTfmDA==",
+      "type": "package",
+      "path": "microsoft.extensions.localization.abstractions/5.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Localization.Abstractions.xml",
+        "lib/net5.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/net5.0/Microsoft.Extensions.Localization.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.xml",
+        "microsoft.extensions.localization.abstractions.5.0.11.nupkg.sha512",
+        "microsoft.extensions.localization.abstractions.nuspec"
+      ]
+    },
     "Microsoft.Extensions.Logging/6.0.0-rc.2.21480.5": {
       "sha512": "HHZh0FQ21+k5+1VL1G64v1S1/oNkeB08cElUOln6ewKFUYhhyaABH8ASs08O0WSon51EB7ierYkAUOT9BTx3iQ==",
       "type": "package",
@@ -1542,7 +1628,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.0-rc.2.21480.10",
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.0-rc.2.21480.10"
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.0-rc.2.21480.10",
+      "Microsoft.Extensions.Localization >= 5.0.11"
     ]
   },
   "packageFolders": {
@@ -1600,6 +1687,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.0-rc.2.21480.10, )"
+          },
+          "Microsoft.Extensions.Localization": {
+            "target": "Package",
+            "version": "[5.0.11, )"
           }
         },
         "imports": [
