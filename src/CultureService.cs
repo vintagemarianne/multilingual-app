@@ -16,11 +16,12 @@ namespace MultilingualApp
 
         public async Task InitAsync()
         {
-            var cultureName = await _jsRuntime.InvokeAsync<string>("window.localStorage.getItem", "my-blazor-culture");
+            var cultureName = await _jsRuntime.InvokeAsync<string>("window.localStorage.getItem", "current-culture");
 
             if (cultureName == null)
             {
-                cultureName = await _httpClient.GetStringAsync("http://getcurrentculture...");
+                //cultureName = await _httpClient.GetStringAsync("http://getcurrentculture...");
+                cultureName = "en-US";
             }
             await SetCurrentCultureAsync(cultureName);
         }
@@ -31,7 +32,7 @@ namespace MultilingualApp
             CultureInfo.DefaultThreadCurrentCulture = culture;
             CultureInfo.DefaultThreadCurrentUICulture = culture;
 
-            await _jsRuntime.InvokeVoidAsync("window.localStorage.setItem", "my-blazor-culture", "en-US");
+            await _jsRuntime.InvokeVoidAsync("window.localStorage.setItem", "current-culture", name);
         }
     }
 }
