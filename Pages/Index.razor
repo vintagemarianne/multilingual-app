@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using System.Globalization
 @inject IStringLocalizer<Index> Loc
+@inject IStringLocalizer<App> AppLoc
 
 <PageTitle>Index</PageTitle>
 
@@ -16,6 +17,10 @@ Welcome to your new app.
 
 <p>
     @Loc["Greeting"]
+</p>
+
+<p>
+    @AppLoc["Welcome"]
 </p>
 
 <p>

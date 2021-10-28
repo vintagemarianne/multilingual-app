@@ -17,16 +17,17 @@ var host = builder.Build();
 
 CultureInfo culture;
 var js = host.Services.GetRequiredService<IJSRuntime>();
-var result = await js.InvokeAsync<string>("blazorCulture.get");
 
-if (result != null)
+var cultureName = await js.InvokeAsync<string>("window.localStorage.getItem", "my-blazor-culture");
+
+if (cultureName != null)
 {
-    culture = new CultureInfo(result);
+    culture = new CultureInfo(cultureName);
 }
 else
 {
     culture = new CultureInfo("en-US");
-    await js.InvokeVoidAsync("blazorCulture.set", "en-US");
+    await js.InvokeVoidAsync("window.localStorage.setItem", "my-blazor-culture", "en-US");
 }
 
 CultureInfo.DefaultThreadCurrentCulture = culture;

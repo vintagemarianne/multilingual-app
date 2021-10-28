@@ -30,7 +30,7 @@
             if (CultureInfo.CurrentCulture != value)
             {
                 var js = (IJSInProcessRuntime)JSRuntime;
-                js.InvokeVoid("blazorCulture.set", value.Name);
+                js.InvokeVoid("window.localStorage.setItem", "my-blazor-culture", value.Name);
 
                 Nav.NavigateTo(Nav.Uri, forceLoad: true);
             }
