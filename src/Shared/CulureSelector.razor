@@ -1,6 +1,7 @@
 ﻿@using  System.Globalization
 @inject IJSRuntime JSRuntime
 @inject NavigationManager Nav
+@inject CultureService cultureService
 
 <p>
     <label>
@@ -29,9 +30,7 @@
         {
             if (CultureInfo.CurrentCulture != value)
             {
-                var js = (IJSInProcessRuntime)JSRuntime;
-                js.InvokeVoid("window.localStorage.setItem", "my-blazor-culture", value.Name);
-
+                _ = cultureService.SetCurrentCultureAsync(value.Name);
                 Nav.NavigateTo(Nav.Uri, forceLoad: true);
             }
         }
